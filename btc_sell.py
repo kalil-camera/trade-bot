@@ -19,13 +19,13 @@ while True:
         print(f"Current price: {current_price}")
 
         if current_price >= take_profit_price:
-            print(f"Target hit! Selling {amount} BTC at {current_price}")
+            print(f"Selling {amount} BTC at {current_price}")
             order = exchange.create_market_sell_order(symbol, amount)
             print(f"Order executed: {order}")
             break
 
         elif current_price <= stop_loss_price:
-            print(f"Stop loss triggered! Selling {amount} BTC at {current_price}")
+            print(f"Stop loss trigger: Selling {amount} BTC at {current_price}")
             order = exchange.create_market_sell_order(symbol, amount)
             print(f"Order executed: {order}")
             break
