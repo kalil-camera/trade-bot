@@ -6,7 +6,7 @@ exchange = ccxt.binance({
     'secret': 'your_api_secret',
 })
 
-symbol = 'BTC/USDT'
+symbol = 'BTC/BRL'
 amount = 0.001 
 interval = 3600
 
